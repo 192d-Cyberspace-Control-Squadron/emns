@@ -1,10 +1,10 @@
 [package]
-name = "notification-agent"
+name = "enms-notification-agent"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-tokio = { version = "1.35", features = ["full"] }
+tokio = { version = "1.48", features = ["full"] }
 tokio-tungstenite = "0.21"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
@@ -22,10 +22,10 @@ rodio = "0.17"
 anyhow = "1.0"
 log = "0.4"
 env_logger = "0.11"
-uuid = { version = "1.6", features = ["v4", "serde"] }
+uuid = { version = "1.19", features = ["v4", "serde"] }
 chrono = { version = "0.4", features = ["serde"] }
 reqwest = { version = "0.11", features = ["json"] }
 hostname = "0.4"
 
 [build-dependencies]
-embed-resource = "2.4"
+embed-resource = "2.5"
