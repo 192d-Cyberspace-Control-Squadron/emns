@@ -1,0 +1,7 @@
+[project]
+name = "emnsdocs"
+version = "0.1.0"
+description = "Zensical site for emns documentation"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = ["zensical>=0.0.14"]

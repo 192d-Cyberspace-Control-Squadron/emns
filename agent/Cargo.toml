@@ -1,0 +1,31 @@
+[package]
+name = "notification-agent"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.35", features = ["full"] }
+tokio-tungstenite = "0.21"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+futures-util = "0.3"
+windows = { version = "0.52", features = [
+    "Data_Xml_Dom",
+    "UI_Notifications",
+    "Foundation",
+    "Win32_Foundation",
+    "Win32_System_Threading",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_UI_Shell",
+] }
+rodio = "0.17"
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.11"
+uuid = { version = "1.6", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+reqwest = { version = "0.11", features = ["json"] }
+hostname = "0.4"
+
+[build-dependencies]
+embed-resource = "2.4"
