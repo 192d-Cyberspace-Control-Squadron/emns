@@ -18,7 +18,7 @@ windows = { version = "0.52", features = [
     "Win32_UI_WindowsAndMessaging",
     "Win32_UI_Shell",
 ] }
-rodio = "0.17"
+rodio = "0.21"
 anyhow = "1.0"
 log = "0.4"
 env_logger = "0.11"
